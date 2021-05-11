@@ -1,12 +1,24 @@
-# pangeo-forge-bakery-images ☁️🍞
+# pangeo-forge Bakery Images ☁️🍞
 
-This repository serves as the provider of the Docker image definitions used by `pangeo-forge` Bakeries and their dask clusters and the infrastructure to host those images on various cloud platforms
+This repository serves as the provider of the worker Docker image definitions used by `pangeo-forge` Bakeries and their dask clusters
+
+All images are based on the `pangeo-notebook` image found [here](https://github.com/pangeo-data/pangeo-docker-images)
 
 # Contents
 
+* [📸 Images - Available image tags](#available-image-tags)
+* [📸 Images - Usage](#usage)
 * [🧑‍💻 Development - Requirements](#requirements)
-* [🧑‍💻 Development - Getting Started](#getting-started-🏃‍♀️)
-* [🧑‍💻 Development - Makefile goodness](#makefile-goodness)
+
+# Images
+
+## Available image tags
+
+The following image tags for `bakery-worker` are currently available on the `pangeo-forge` DockerHub:
+
+| Image Tag | Core Package Versions | Size |
+|-----------|-----------------------|------|
+| [`pangeonotebook-2021.05.04_prefect-0.14.7_pangeoforgerecipes-0.3.3`](./images/pangeonotebook-2021.05.04_prefect-0.14.7_pangeoforgerecipes-0.3.3)|pangeo-notebook - [`2021.05.04`](https://hub.docker.com/layers/pangeo/pangeo-notebook/2021.05.04/images/sha256-0e841ae67bf01526c953e7ce39fd8fc8bbb3fb6cc22794eefd867881e427e757?context=explore)<br>prefect - [`0.14.7`](https://github.com/PrefectHQ/prefect/releases/tag/0.14.17)<br>pangeo-forge-recipes - [`0.3.3`](https://github.com/pangeo-forge/pangeo-forge-recipes/releases/tag/0.3.3)| ![](https://img.shields.io/docker/image-size/pangeo-forge/bakery-worker/pangeonotebook-2021.05.04_prefect-0.14.7_pangeoforgerecipes-0.3.0) |
 
 # Development
 
@@ -14,13 +26,6 @@ This repository serves as the provider of the Docker image definitions used by `
 
 To develop on this project, you should have the following installed:
 
-* [Node 14](https://nodejs.org/en/download/) (We recommend using NVM [Node Version Manager](https://github.com/nvm-sh/nvm))
-* [Python 3.8.*](https://www.python.org/downloads/) (We recommend using [Pyenv](https://github.com/pyenv/pyenv) to handle Python versions)
-* [Poetry](https://github.com/python-poetry/poetry)
-* [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html) - There is a `package.json` in the repository, it's recommended to run `npm install` in the repository root and make use of `npx <command>` rather than globally installing AWS CDK
-* [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
-* [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-* [Terraform 0.15.1](https://www.terraform.io/downloads.html)
 * [Docker](https://docs.docker.com/get-docker/)
 
 If you're developing on MacOS, all of the above can be installed using [homebrew](https://brew.sh/)
