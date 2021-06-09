@@ -1,0 +1,33 @@
+name: pangeo-forge-bakery-images CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        tag: [
+          "pangeonotebook-2021.05.15_prefect-0.14.19_pangeoforgerecipes-0.3.4"
+        ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build image
+        run: |
+          make build-image image=${{ matrix.tag }}
+
+      - name: Authenticate to DockerHub
+        if: github.event.ref == 'refs/heads/main'
+        run: |
+          echo ${{ secrets.BAKERY_IMAGES_DOCKERHUB_TOKEN }} | docker login -u ${{ secrets.BAKERY_IMAGES_DOCKERHUB_USER }} --password-stdin
+
+      - name: Push image
+        if: github.event.ref == 'refs/heads/main'
+        run: |
+          make push-image image=${{ matrix.tag }}
+

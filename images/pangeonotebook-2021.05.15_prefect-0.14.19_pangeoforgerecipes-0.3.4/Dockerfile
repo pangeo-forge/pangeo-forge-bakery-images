@@ -1,4 +1,4 @@
-FROM pangeo/pangeo-notebook:2021.05.04
+FROM pangeo/pangeo-notebook:2021.05.15
 
 COPY ./requirements.txt requirements.txt
 
