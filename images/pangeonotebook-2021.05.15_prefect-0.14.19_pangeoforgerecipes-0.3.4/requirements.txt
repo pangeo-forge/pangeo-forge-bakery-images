@@ -1,6 +1,6 @@
 pangeo-forge-recipes==0.3.4
-prefect[aws, azure, google, kubernetes]==0.14.19
 dask-cloudprovider[aws]==2021.3.1
+prefect==0.14.19
 click==7.1.2
 pytest==6.2.4
 regionmask==0.6.2
