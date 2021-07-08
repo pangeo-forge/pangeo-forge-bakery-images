@@ -20,6 +20,7 @@ The following image tags for `pangeo-forge-bakery-images` are currently availabl
 | Image Tag | Core Package Versions | Size |
 |-----------|-----------------------|------|
 | [`pangeonotebook-2021.05.15_prefect-0.14.19_pangeoforgerecipes-0.3.4`](./images/pangeonotebook-2021.05.15_prefect-0.14.19_pangeoforgerecipes-0.3.4)|pangeo-notebook - [`2021.05.15`](https://hub.docker.com/layers/pangeo/pangeo-notebook/2021.05.15/images/sha256-fffe116656367f88642f14d080a8ca26fd6c82042458bf6f1e603b551916493e?context=repo)<br>prefect - [`0.14.19`](https://github.com/PrefectHQ/prefect/releases/tag/0.14.19)<br>pangeo-forge-recipes - [`0.3.4`](https://github.com/pangeo-forge/pangeo-forge-recipes/releases/tag/0.3.4)| ![](https://img.shields.io/docker/image-size/pangeo/pangeo-forge-bakery-images/pangeonotebook-2021.05.15_prefect-0.14.19_pangeoforgerecipes-0.3.4) |
+| [`pangeonotebook-2021.06.05_prefect-0.14.22_pangeoforgerecipes-0.4.0`](./images/pangeonotebook-2021.06.05_prefect-0.14.22_pangeoforgerecipes-0.4.0)|pangeo-notebook - [`2021.06.05`](https://hub.docker.com/layers/pangeo/pangeo-notebook/2021.06.05/images/sha256-fffe116656367f88642f14d080a8ca26fd6c82042458bf6f1e603b551916493e?context=repo)<br>prefect - [`0.14.22`](https://github.com/PrefectHQ/prefect/releases/tag/0.14.22)<br>pangeo-forge-recipes - [`0.4.0`](https://github.com/pangeo-forge/pangeo-forge-recipes/releases/tag/0.4.0)| ![](https://img.shields.io/docker/image-size/pangeo/pangeo-forge-bakery-images/pangeonotebook-2021.06.05_prefect-0.14.22_pangeoforgerecipes-0.4.0) |
 
 ## Usage
 

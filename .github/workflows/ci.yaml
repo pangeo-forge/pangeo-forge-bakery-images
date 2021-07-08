@@ -12,7 +12,8 @@ jobs:
       fail-fast: false
       matrix:
         tag: [
-          "pangeonotebook-2021.05.15_prefect-0.14.19_pangeoforgerecipes-0.3.4"
+          "pangeonotebook-2021.05.15_prefect-0.14.19_pangeoforgerecipes-0.3.4",
+          "pangeonotebook-2021.06.05_prefect-0.14.22_pangeoforgerecipes-0.4.0"
         ]
     steps:
       - uses: actions/checkout@v2
