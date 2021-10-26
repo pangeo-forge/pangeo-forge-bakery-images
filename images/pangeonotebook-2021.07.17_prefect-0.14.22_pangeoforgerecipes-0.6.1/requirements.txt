@@ -1,3 +1,7 @@
 pangeo-forge-recipes==0.6.1
 prefect[aws, azure, google, kubernetes]==0.14.22
+<<<<<<< HEAD
 dask-cloudprovider[aws]==2021.3.1
+=======
+ask-cloudprovider[aws]==2021.3.1
+>>>>>>> 311420d005962d2e875c66da52148e2510f3db9c
