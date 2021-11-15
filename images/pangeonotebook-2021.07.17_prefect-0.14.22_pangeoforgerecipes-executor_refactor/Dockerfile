@@ -1,4 +1,4 @@
-ROM pangeo/pangeo-notebook:2021.07.17
+FROM pangeo/pangeo-notebook:2021.07.17
 
 COPY ./requirements.txt requirements.txt
 
