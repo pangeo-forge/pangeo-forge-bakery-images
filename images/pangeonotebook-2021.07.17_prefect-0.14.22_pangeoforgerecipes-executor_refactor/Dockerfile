@@ -1,4 +1,4 @@
-FROM pangeo/pangeo-notebook:2021.07.17
+ROM pangeo/pangeo-notebook:2021.07.17
 
 COPY ./requirements.txt requirements.txt
 
@@ -6,5 +6,5 @@ RUN conda run -n notebook pip uninstall -y -r requirements.txt
 
 RUN conda run -n notebook pip install -I -r requirements.txt
 
-RUN conda run -n notebook pip install git+https://github.com/pangeo-forge/pangeo-forge-recipes.git@refs/pull/219/head
+RUN conda run -n notebook pip install git+https://github.com/pangeo-forge/pangeo-forge-recipes.git@refs/pull/229/head
 
