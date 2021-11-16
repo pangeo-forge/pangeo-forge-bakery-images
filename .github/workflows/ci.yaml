@@ -18,7 +18,8 @@ jobs:
           "pangeonotebook-2021.07.17_prefect-0.14.22_pangeoforgerecipes-executor_refactor",
           "pangeonotebook-2021.07.17_prefect-0.14.22_pangeoforgerecipes-0.6.0",
           "pangeonotebook-2021.07.17_prefect-0.14.22_pangeoforgerecipes-0.6.1",
-          "pangeonotebook-2021.07.17_prefect-0.14.22_pangeoforgerecipes-229"
+          "pangeonotebook-2021.07.17_prefect-0.14.22_pangeoforgerecipes-229",
+          "pangeonotebook-2021.07.17_prefect-0.14.22_pangeoforgerecipes-236"
         ]
     steps:
       - uses: actions/checkout@v2
