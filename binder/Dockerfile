@@ -1,0 +1,1 @@
+FROM pangeo/pangeo-forge-bakery-images:pangeonotebook-2021.07.17_prefect-0.14.22_pangeoforgerecipes-0.6.1
