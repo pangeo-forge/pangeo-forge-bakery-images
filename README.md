@@ -1,4 +1,4 @@
-# :construction: This repo is archived. It is no longer used in production. :construction: 
+# :construction: This repo is archived. It is no longer used in production.
 ## We have kept this repo as an archive (rather than deleting it), in case it is useful as reference.
 
 # pangeo-forge Bakery Images ☁️🍞
